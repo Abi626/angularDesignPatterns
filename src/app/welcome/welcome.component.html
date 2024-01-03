@@ -1,0 +1,39 @@
+<!-- <p>welcome {{getName()}}</p>
+<p>{{10+10}}</p> -->
+<!-- <h1>{{isLoggedIn() ? "WELCOME": "PLEASE LOGIN"}}</h1>
+<button type="button" (click)="login()">Login</button> -->
+<!-- <button type="button" (click)="displayName()">Display Name</button> -->
+
+<!-- <h1 class="is-logged-in"> Welcome Component</h1> -->
+<!-- <h1 class="{{isLoggedInClass}}"> Welcome Component</h1> -->
+<!-- <h1 [class.is-not-logged-in]="!isLoggedIn()" [class.is-logged-in]="isLoggedIn()"> Welcome Component</h1> -->
+<!-- <h1 class="{{isLoggedIn() ? 'is-logged-in':'is-not-logged-in'}}">welcome component</h1> -->
+
+
+<!-- <h1 [ngClass]="{'is-logged-in':isLoggedIn(),'is-not-logged-in':!isLoggedIn()}">welcome component</h1>
+<button type="button" (click)="login()">Login</button>
+<input *ngIf="isLoggedIn()"(input)="updateName($event)" type="text"> -->
+
+<!-- <form>
+     <input type="text" required> 
+     <input [attr.required]="true"type="text"> 
+    <input [attr.required]="isLoggedIn()"type="text">
+    <button type="submit">submit</button>
+</form> -->
+
+<p>States</p>
+
+    <ul>
+        <li *ngFor="let state of states; let i = index">
+        <p>state #{{i}}- {{state}}</p>
+        </li>
+    </ul>
+
+<p>Cars</p>
+<ul>
+    <li *ngFor="let car of cars">
+        <p>{{car.name}}</p>
+        <p>{{car.color}}</p>
+
+    </li>
+</ul>

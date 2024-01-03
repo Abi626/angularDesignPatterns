@@ -1,0 +1,9 @@
+<p>Cars</p>
+<ul>
+    <li *ngFor="let car of cars">
+        <p>{{car.name | uppercase}}</p>
+        <p>{{car.color}}</p>
+        <!-- <p>Purchased {{car.purchasedDate |date :'MM/dd/yy'}}</p> -->
+        <p>Purchased {{car.purchasedDate |date :'MMM/dd/yy' |uppercase}}</p>
+    </li>
+</ul>

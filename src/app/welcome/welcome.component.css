@@ -1,0 +1,19 @@
+/* :host{
+    display: block;
+    height: 300px;
+    width: 400px;
+    background-color: forestgreen;
+} */
+:host-context(.red-theme){
+    color:red;
+    display:flow-root;
+    height: 100px;
+    width: 200px;
+    background-color: aqua;
+}
+.is-logged-in{
+    color: blue;
+}
+.isnot-logged-in{
+    color:red;
+}
